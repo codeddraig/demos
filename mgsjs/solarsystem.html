@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>The Solar System</title>
+    <style>
+      body {
+        font-family: "Roboto", "Arial";
+        margin: 0;
+      }
+      h2 {
+        color: #333333;
+        text-transform: uppercase;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .end {
+        color: #888888;
+        letter-spacing: 3px;
+        text-align: right;
+        text-transform: uppercase;
+      }
+      img {
+        border-radius: 15px 50px;
+        padding: 15px;
+      }
+      p {
+        text-align: justify;
+      }
+      .main {
+        perspective: 1px;
+        transform-style: preserve-3d;
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: visible;
+      }
+      .content-container {
+        position: sticky;
+        display: block;
+        background-color: white;
+        z-index: 1;
+        overflow-x: hidden;
+        overflow-y: visible;
+      }
+      .content {
+        max-width: 750px;
+        margin: 0 auto;
+        padding: 75px 0;
+      }
+      .parallax-container {
+        color: #ffffff;
+        font-weight: bolder;
+        font-size: 5em;
+        text-align: center;
+        letter-spacing: 5px;
+        display: flex;
+        flex: 1 0 auto;
+        position: relative;
+        z-index: -1;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        transform: translateZ(-1px) scale(2);
+        background: url("https://codeddraig.github.io/demos/mgsjs/neb.jpg");
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="parallax-container">The Solar System</div>
+      <div class="content-container">
+        <div class="content">
+          <h2>What is the Solar System?</h2>
+          <img width="50%" align="right" src="https://codeddraig.github.io/demos/mgsjs/solsy.jpg" alt="The solar system diagram (not to scale)">
+          <p>The Solar System is made up of the Sun and all of the smaller objects that move around it. Apart from the Sun, the largest members of the Solar System are the eight major planets. Nearest the Sun are four fairly small, rocky planets - Mercury, Venus, Earth and Mars.</p>
+          <p>Beyond Mars is the asteroid belt – a region populated by millions of rocky objects. These are left-overs from the formation of the planets, 4.5 billion years ago.</p>
+          <p>On the far side of the asteroid belt are the four gas giants - Jupiter, Saturn, Uranus and Neptune. These planets are much bigger than Earth, but very lightweight for their size. They are mostly made of hydrogen and helium.</p>
+          <p>Until recently, the furthest known planet was an icy world called Pluto. However, Pluto is dwarfed by Earth’s Moon and many astronomers think it is too small to be called a true planet.</p>
+          <p>An object named Eris, which is at least as big as Pluto, was discovered very far from the Sun in 2005. More than 1,000 icy worlds such as Eris have been discovered beyond Pluto in recent years. These are called Kuiper Belt Objects. In 2006, the International Astronomical Union decided that Pluto and Eris must be classed as “dwarf planets”.</p>
+          <p>Even further out are the comets of the Oort Cloud. These are so far away that they are invisible in even the largest telescopes. Every so often one of these comets is disturbed and heads towards the Sun. It then becomes visible in the night sky.</p>
+          <h2>Content Credits</h2>
+          <p>Text: <a href="https://www.esa.int/esaKIDSen/SEMF8WVLWFE_OurUniverse_0.html">European Space Agency</a>. Images: <a href="https://commons.wikimedia.org/wiki/Main_Page">Wikimedia Commons</a>. All content is used under "fair use" (educational purposes). Copyright of all content remains with the source.</p>
+          <p class="end">Made in <a href="https://codedragon.org" target="_blank">CodeDragon</a>.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
